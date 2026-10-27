@@ -8,9 +8,6 @@ import java.util.List;
 
 public class PayrollCalculator {
     public static void main(String[] args) {
-        // Create a empty list of employees
-        List<Employee> employeeList = new ArrayList<Employee>();
-
         // Attempt to read the "employees.csv" file and handle errors
         try (BufferedReader reader = new BufferedReader(new FileReader("employees.csv"))) {
             String line;
@@ -26,7 +23,11 @@ public class PayrollCalculator {
                 double payRate = Double.parseDouble(split[3]);
 
                 // Create the new employee and add them to the list
-                employeeList.add(new Employee(id,name,hours,payRate));
+                Employee employee = new Employee(id,name,hours,payRate);
+                System.out.printf(
+                        "| [ID]: %d | [NAME]: %s | [HOURS WORKED]: %.2f | [PAY RATE]: $%.2f%n",
+                        id,name,hours,payRate
+                );
             }
         } catch (java.io.FileNotFoundException e) {
             System.out.println("Error: could not find the employee.csv file");

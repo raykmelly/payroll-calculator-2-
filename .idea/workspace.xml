@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Made a .csv file, created employee class">
-      <change afterPath="$PROJECT_DIR$/employees.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Employee.java" afterDir="false" />
+    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Read through the .csv file, split the lines, get the data and create a new employee to add to the list.">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +50,20 @@
       <option name="project" value="LOCAL" />
       <updated>1793130909229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Read through the .csv file, split the lines, get the data and create a new employee to add to the list.">
+      <created>1793132068584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793132068584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started project" />
     <MESSAGE value="Made a .csv file, created employee class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a .csv file, created employee class" />
+    <MESSAGE value="Read through the .csv file, split the lines, get the data and create a new employee to add to the list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Read through the .csv file, split the lines, get the data and create a new employee to add to the list." />
   </component>
 </project>
