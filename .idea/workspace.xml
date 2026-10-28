@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Finished the project by displaying the information">
+    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Clarified some things. Rewrite some methods / added some. Changing the projects scope to creating a payroll.csv file from the employee.csv file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" afterDir="false" />
     </list>
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1793132402278</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added the actual .csv files we need">
+      <created>1793209734445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793209734445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -73,6 +80,8 @@
     <MESSAGE value="Made a .csv file, created employee class" />
     <MESSAGE value="Read through the .csv file, split the lines, get the data and create a new employee to add to the list." />
     <MESSAGE value="Finished the project by displaying the information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the project by displaying the information" />
+    <MESSAGE value="Added the actual .csv files we need" />
+    <MESSAGE value="Clarified some things. Rewrite some methods / added some. Changing the projects scope to creating a payroll.csv file from the employee.csv file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clarified some things. Rewrite some methods / added some. Changing the projects scope to creating a payroll.csv file from the employee.csv file" />
   </component>
 </project>
