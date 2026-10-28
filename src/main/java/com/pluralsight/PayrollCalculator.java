@@ -28,6 +28,9 @@ public class PayrollCalculator {
                         "| [ID]: %d | [NAME]: %s | [HOURS WORKED]: %.2f | [PAY RATE]: $%.2f%n",
                         id,name,hours,payRate
                 );
+
+                // Turn off buffer
+                reader.close();
             }
         } catch (java.io.FileNotFoundException e) {
             System.out.println("Error: could not find the employee.csv file");
