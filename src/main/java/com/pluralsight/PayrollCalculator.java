@@ -18,7 +18,7 @@ public class PayrollCalculator {
 
         // Create a list of existing employees with employees.csv information
         List<Employee> employeeList = createEmployeeList(processFile);
-        // Generate a payroll.json report
+        // Generate a payroll.json or payroll.csv report
         createPayrollReport(employeeList,writingFile);
     }
 
@@ -59,6 +59,7 @@ public class PayrollCalculator {
             System.out.println("Error: problem reading employee.csv file");
         }
 
+        System.out.println("-------------------------------------");
         return employeeList;
     }
 

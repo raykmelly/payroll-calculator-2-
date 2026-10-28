@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Did the bonus with a .json file">
-      <change afterPath="$PROJECT_DIR$/payroll-sept-2023.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="723754ea-0859-46b2-899c-ebadbe4fd0ba" name="Changes" comment="Finished checking if you used a .json or .csv file and formatted correctly">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/PayrollCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1793213748402</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished checking if you used a .json or .csv file and formatted correctly">
+      <created>1793216778544</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793216778544</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -92,6 +97,7 @@
     <MESSAGE value="Clarified some things. Rewrite some methods / added some. Changing the projects scope to creating a payroll.csv file from the employee.csv file" />
     <MESSAGE value="Clean up the methods. Generate &quot;employeeList&quot; List and pass it to createPayrollReport(); to generate a new .json file" />
     <MESSAGE value="Did the bonus with a .json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did the bonus with a .json file" />
+    <MESSAGE value="Finished checking if you used a .json or .csv file and formatted correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished checking if you used a .json or .csv file and formatted correctly" />
   </component>
 </project>
