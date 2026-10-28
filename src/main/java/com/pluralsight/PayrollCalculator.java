@@ -62,29 +62,50 @@ public class PayrollCalculator {
         return employeeList;
     }
 
-    // Creates a .csv file in this format: (payroll-month-year)
-    // Take in a filename to create or rewrite, and employee info to be
-    // added to the file
+    // Checks if a fileName is a .json file
+    public static boolean isJsonFile(String fileName) {
+        if (fileName == null) {
+            return false;
+        }
+        return fileName.trim().toLowerCase().endsWith(".json");
+    }
+
+
+    // Creates a .json payroll report file in this format: (payroll-month-year)
     public static void createPayrollReport(List<Employee> employeeList, String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
-            // JSON start line
-            writer.write("[\n");
+            if (isJsonFile(fileName)) {
+                writer.write("[\n"); // .json start line
+            } else {
+                writer.write("id|name|gross-pay\n"); // .csv start line
+            }
+
             for (Employee employee : employeeList) {
                 // Use the employee information to get the values needed
                 String id = String.valueOf(employee.getEmployeeId());
                 String name = employee.getName();
                 String grossPay = String.valueOf(employee.getGrossPay());
 
-               // Create a string line for information
-                String line = "{id: " + id + ", name: " + name + ", gross-pay: " + grossPay + "}\n";
-                writer.write(line);
+                // Check if this file is a .json or .csv to format correctly
+                if (isJsonFile(fileName)) {
+                    // Create a string line for information (.json format)
+                    String line = "\t{\"id\": " + id + ", \"name\": " +
+                            "\"" + name + "\"" + ", \"gross-pay\": " + grossPay + "},\n";
+                    writer.write(line);
+                } else {
+                    // Create a string line for information (.csv format)
+                    String line = id + "|" + name + "|" + grossPay + "\n";
+                    writer.write(line);
+                }
             }
-            // JSON end line
-            writer.write("[\n");
+
+            if (isJsonFile(fileName)) {
+                writer.write("]\n"); // .json end line
+            }
         } catch (java.io.FileNotFoundException e) {
-            System.out.println("Error: could not find the employee.csv file");
+            System.out.println("Error: could not find " + fileName);
         } catch (IOException e) {
-            System.out.println("Error: problem reading employee.csv file");
+            System.out.println("Error: problem writing " + fileName);
         }
     }
 }
